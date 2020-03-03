@@ -97,21 +97,7 @@ nav.closed footer button {
 }
 
 
-.button {
-  float: right;
-  border-radius: 4px;
-  background-color:#dde3ed ;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 15px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  font-weight: bolder;
-}
+
 .button span {
   cursor: pointer;
   display: inline-block;
