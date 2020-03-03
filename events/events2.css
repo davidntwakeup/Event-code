@@ -79,8 +79,9 @@ ul li.active a{
   opacity: 1;
   right: 0;
 }
-.form-group{
-  
+.container{
+  background-image: url("../images/purple.jpeg");
+  color: antiquewhite;
   
 }
 
