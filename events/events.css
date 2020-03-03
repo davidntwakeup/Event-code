@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
-@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
-
 * {
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
@@ -107,7 +105,4 @@ nav.closed footer button {
     margin-left: 8%;
     margin-top: 3%;
 
-}
-#about{
-    font-family: 'Bree Serif';
 }
