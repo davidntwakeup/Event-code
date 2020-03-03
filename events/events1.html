@@ -7,20 +7,42 @@
     <title>Events Page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="events1.css">
 
 </head>
 <body>
-  <div class="main">
-    <div class="logo">
-        <img src="images/1.png"></div>
-    <ul>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact us</a></li>
-    </ul>
-</div>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+      <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">About</a></li>
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Events
+        </a>
+        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">find event</a>
+          <a class="dropdown-item" href="#">buy tickets</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">open events</a>
+          <a class="dropdown-item" href="#">passed events</a>
+        </div>
+      </li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <br>
     <div id="ab">
         <div id="about">
             <h2 class="text-uppercase">Want to discover something amazing</h2>
