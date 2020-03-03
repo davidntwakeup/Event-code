@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Events Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="events.css">
+
 </head>
 <body>
     <nav class="menu">
@@ -25,8 +28,35 @@
         </ol>
         <footer><button aria-label="Toggle Menu">Toggle</button></footer>
     </nav> 
+    <div id="ab">
+        <div id="about">
+            <h2 class="text-uppercase">Want to discover something amazing</h2>
+            <br>
+            <h3>Enter your details below</h3>
+            <form method="post" class="form">
+              <label for="name">Name</label>
+              <input type="text" name="name" placeholder="Enter your name"
+                class="form-control w-50" style="margin-left: 25%;" required/>
+              <label for="email">Email Address</label>
+              <input name="email" placeholder="Enter your email"
+                class="form-control w-50" style="margin-left: 25%;" required />
+              <label for="county">County</label>
+              <input type="text" name="county" placeholder="Enter your county"
+                class="form-control w-50" style="margin-left: 25%;" required />
+
+                <label for="location">Location</label>
+                <input name="location" placeholder="Enter your location"
+                  class="form-control w-50" style="margin-left: 25%;" required /> <br>
+              
+              <input type="submit" class="btn btn-lg  bg-light" value="Find an Event">
+            </form>
+        </div>
+      </div>
+   
+   
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="events.js"></script>
+    
     
 </body>
 </html>
