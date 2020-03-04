@@ -42,3 +42,9 @@ function myMessage() {
         alert("Please fill in all the details");
     }
 }
+
+$(document).ready(function () {
+    $("#trigger").click(function () {
+        $("#about").toggle();
+    });
+});
