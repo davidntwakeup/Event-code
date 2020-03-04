@@ -35,7 +35,7 @@ body{
      text-align: center;
   }
   .icon-bar {
-    position: fixed;
+    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
