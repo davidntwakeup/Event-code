@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Events Page</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
+  <title>Eventcon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head> 
 <body>
 
-    <header>
-        <div class="main">
-            <div class="logo">
-                <img src="images/1.png">               
-            </div>
-            
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </div>
+<header>
+<nav class="navbar navbar-expand-sm navbar-light secondary-color">
+     <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
+     <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse  navbar-collapse" id="nav">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item"><a href="index.html" class="nav-link text-uppercase text-monospace">HOME</a></li>
+         <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">ABOUT</a></li>
+         <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         EVENTS
+       </a>
+       <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="#">Find events</a>
+         <a class="dropdown-item" href="#">Buy tickets</a>
+         <div class="dropdown-divider"></div>
+         <a class="dropdown-item" href="#">Open events</a>
+         <a class="dropdown-item" href="#">Passed events</a>
+       </div>
+     </li>
+         <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
+       </ul>
+     </div>
+   </nav>
+</header>
 
-        
-        <div class="title">
-            <h1>EVENT-MANAGER</h1>
+<nav>
+  <div class="slider">
+    <div class="load">
+    </div>
+      <div class="content">
+        <div class="principal">
+          <h1>EVENTCON</h1>
+          <p>Eventcon is an event management and ticketing website. This is a platform that allows users to browse and find local events.</p><br><br><br>
         </div>
-        <div class="subtitle">
-            <p>Event management and ticketing website. 
-                The service allows users to browse and find local events.
-            </p>
-        </div>
+      </div>
+    </div> 
+</nav>
 
-        <div class="button">
-            <a href="#" class="btn">EVENTS</a>
-            <a href="#" class="btn">LEARN MORE</a>
-        </div>
+<main>
+  <div class="button">
+    <a href="#" class="btn btn-medium">ABOUT US</a>
+    <a href="#" class="btn btn-medium">LEARN MORE</a><br>
+  </div>
+</main>
 
-    </header> 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
