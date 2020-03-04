@@ -1,0 +1,59 @@
+
+body{
+  background-image:url("img/bb.jpg") ;
+  background-size: cover;
+}
+.img-hover-zoom {
+    /* [1.1] Set it as per your need */
+    overflow: hidden /* [1.2] Hide the overflowing of child elements */
+  }
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+    /* [1] The container */
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+    transition: transform .5s ease-in-out;
+  }
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-rotate:hover img {
+    transform: scale(2) rotate(360deg);
+  }
+
+  .mg-image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+        max-width: 100%;
+}
+.mg-image:hover img {
+    -webkit-transform:scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:scale(2); /* Opera */
+     transform:scale(2);
+}
+/* just apply some height and width to the wrapper.*/
+.mg-image {
+  /* width:400px;
+  height:400px; */
+  overflow: hidden;
+}
+
+.hover07 img {
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.hover07:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}

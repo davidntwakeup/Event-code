@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Events Page</title>
+
+  <link rel="stylesheet" href="even.css">
+</head>
+
+<body class="container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-light secondary-color">
+      <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase text-monospace">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase text-monospace">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">find event</a>
+              <a class="dropdown-item" href="#">buy tickets</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="passedevents.html">passed events</a>
+              <a class="dropdown-item" href="openevents.html">open events</a>
+              <a class="dropdown-item" href="futureevents.html">future events</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
+
+
+
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="five">
+    <div class="text-five">
+      <div class="text-center text-light">
+        <h3 class="card-header text-light">Open Events
+          <div style="float: right; cursor: pointer;">
+        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+      </div>
+        </h3>
+      </div>
+
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="mdb-lightbox-ui">
+                <div class="mdb-lightbox">
+                  <div class="row">
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/17.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a><span class="text-dark font-weight-bold text-center">  product 1 <br>PRICE: $10
+                             <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="img/17.jpg">Add to Cart</button>
+                      </div>
+                    </figure>
+
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/18.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a><span class="text-dark font-weight-bold text-center">PRICE: $17777
+                        </span><button class="btn bg-light text-dark" onclick="butt()">order</button></p>
+                      </div>
+                    </figure>
+
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/19.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a ><span class="text-dark font-weight-bold text-center">PRICE: $10
+                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
+                      </div>
+                    </figure>
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/20.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE:
+                              $15</span><br><button class="btn bg-light text-dark">order</button></a></p>
+                      </div>
+                    </figure>
+                  </div>
+                  <div class="row">
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/21.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $12
+                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
+                      </div>
+                    </figure>
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/22.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $15
+                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
+                      </div>
+                    </figure>
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/23.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $11
+                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
+                      </div>
+                    </figure>
+                    <figure class="col-md-3" style="width:300px">
+                      <div class="hover07 mg-image">
+                        <img src="img/24.jpg" class="img-fluid " style="height:200px;" alt="pizza">
+                      </div>
+                      <div class="text-center rgba-white-light">
+                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $15
+                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="even.js"></script>
+</body>
+
+</html>

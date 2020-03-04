@@ -7,17 +7,24 @@
   line-height: 1.5;
 }
 body {
-  background-image: url(blacka.jpeg);
-  margin: 0;
+  background-image: url("img/details_banner.png");
+  position: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+    margin: 0;
     background-size: cover;
     background-color: lightgrey;
+    overflow: visible;
 }
 nav {
   --duration: .5s;
   --easing: ease-in-out;
-  position: relative;
-  width: 220px;
+  position: fixed;
+  width: 200px;
   margin: 20px;
+  height: 17px;
+  padding: 0;
 }
 nav ol {
   list-style-type: none;
