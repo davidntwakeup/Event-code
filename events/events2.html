@@ -46,30 +46,31 @@
   <br>
     <div class="container">
         <h1> <marquee>Book Now!</marquee></h1>
-        <form>
+        <form name="myForm">
           <div class="form-group">
               <label for="name">Name:</label>
-              <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+              <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
             </div>
               <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
           </div>
           <div class="form-group">
             <label for="Ename">Event name:</label>
-            <input type="Ename" class="form-control" id="Ename" placeholder="Enter event name" name="Ename">
+            <input type="Ename" class="form-control" id="Ename" placeholder="Enter event name" name="Ename" required>
           </div>
           <div class="form-group">
             <label for="Ecode">Event code:</label>
-            <input type="Ecode" class="form-control" id="Ecode" placeholder="Enter event code" name="Ecode">
+            <input type="Ecode" class="form-control" id="Ecode" placeholder="Enter event code" name="Ecode" required >
           </div>
 
           <div class="checkbox">
-            <label><input type="checkbox" name="confirmation"> Are you sure you want to book this event?</label>
+            <label><input type="checkbox" name="confirmation"> Are you sure you want to book this event? </label>
           </div>
           <button class="button"><span>BUY TICKETS</span></button>
           
         </form>
+    </div>
 
 
 

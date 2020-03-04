@@ -81,7 +81,11 @@ ul li.active a{
 }
 .container{
   background-image: url("../images/purple.jpeg");
-  color: antiquewhite;
+  color:rgb(255, 208, 0);
+  font-size: large;
+  font-weight: 900;
+  
+
   
 }
 
