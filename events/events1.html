@@ -25,15 +25,15 @@
           <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">About</a></li>
           <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle text-uppercase text-monospace"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Events
         </a>
-        <div class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">find event</a>
-          <a class="dropdown-item" href="#">buy tickets</a>
+        <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item text-monospace" href="events1.html">Find Event</a>
+          <a class="dropdown-item text-monospace" href="#">Buy Tickets</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">open events</a>
-          <a class="dropdown-item" href="#">passed events</a>
+          <a class="dropdown-item text-monospace" href="#">Open Events</a>
+          <a class="dropdown-item text-monospace" href="#">Passed Events</a>
         </div>
       </li>
           <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
@@ -41,10 +41,12 @@
       </div>
     </nav>
   </header>
-  <br>
+ 
     <div id="ab">
         <div id="about">
+          <div style="padding-bottom: 20px;">
             <h2 class="text-uppercase glow">Want to discover something amazing</h2>
+          </div>
             <h3>Enter your details below</h3>
             <form method="post" class="form">
               <label for="name">Name:</label>
@@ -64,8 +66,9 @@
                   <label for="age">Age:</label>
                 <input type="number" min="18" name="age" placeholder="Enter your age"
                   class="form-control w-50" style="margin-left: 25%;" required />
-              
+              <div style="padding:13px">
               <input type="submit" class="btn btn-lg  bg-light" value="Find an Event">
+            </div>
             </form>
         </div>
       </div>
