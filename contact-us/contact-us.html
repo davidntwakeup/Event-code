@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>contact-us Page</title>
+  <link rel="stylesheet" href="contact-us.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light secondary-color">
+        <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse" id="nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">About</a></li>
+            <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-uppercase text-monospace"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Events
+          </a>
+          <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-monospace" href="events1.html">Find Event</a>
+            <a class="dropdown-item text-monospace" href="#">Buy Tickets</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-monospace" href="#">Open Events</a>
+            <a class="dropdown-item text-monospace" href="#">Passed Events</a>
+          </div>
+        </li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  <br>
+  <div id="about-us">
+    <div class="abt-btn">
+      <button id="trigger" style="font-family: fantasy; font-size: 45px; margin-left: 15%;">About us</button>
+    </div>
+    <br>
+    <div class="onClick">
+      <div id="about">
+        <div class="abt">
+          <h2 style="font-size: 40px;">Bringing the world together through live experience</h2>
+          <p>Event-Manager is a global platform for live experiences that allows anyone to create,
+            share, find and attend events that fuel their passions and enrich their lives. <br>
+            From music festivals, marathons, conferences, community rallies, and fundraisers,
+            to gaming competitions and air guitar contests.<br>
+            Our mission is to bring the world together through live experiences.</p>
+        </div>
+        <div class="image-frame" id="approve-image">
+          <img src="./images/music.jpeg" class="img-fluid" height="100px" width="300px" alt=""></a><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Contact Us">
+    <h1 style="text-align: center; font-size: 45px; color: white; padding-top: 20px; font-family: fantasy;">Contact us
+    </h1>
+    <div id="cards">
+      <div class="card">
+        <div class="container">
+          <h4 style="text-align: center; font-weight: bold;">PURCHASE OF THE TICKET IS DEEMED TO BE<br>ACCEPTANCE OF THE
+            FOLLOWING TERMS AND CONDITIONS;</h4>
+          <ol>
+            <li>Tickets are sold on behalf of the event organizer or promoter and may be subject to
+              additional conditions of admission to the event.</li>
+            <li>Ticket holders buy the event ticket at will. Mtickets will not be responsible loss, damage
+              or injury arising from a pre-existing medical condition or due to breach of these
+              conditions.</li>
+            <li>Advertised programs may be varied without notice. Artists may be added, withdrawn or
+              substituted for performances and the right to vary prices, venues, seating arrangements and
+              audience capacity is reserved by the Glasshouse and hirers.</li>
+            <li>Prices are subject to change without notice.
+              Tickets are subject to no refund or exchange. In some instances such as cancelled events
+              refunds for performance tickets may be reversable in accordance with the agreement with the
+              event owner. Exchanges of tickets, or the replacement of lost, stolen or missing allocated
+              seating tickets may be permitted under certain conditions and fees may apply. General
+              Admission tickets will not be reissued.</li>
+            <li>Mtickets reserves the right to charge transaction fees for bookings in addition to the
+              standard ticket price as well as administration fees for tasks such as ticket exchanges,
+              ticket reissues and other associated administrative tasks.</li>
+
+          </ol>
+          <div class="image-frame" id="approve-image">
+            <strong>Approved by:</strong> Event-Managers<br>
+            <p>&copy 2020;</p>
+            <img src="./images/1.png" class="img-fluid " alt=""></a><br>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="cont">
+            <h4 style="font-size: 35px; font-family: fantasy; text-align: center; padding-top: 9px;">Add a comment:</h4>
+            <form name="myForm" action="" class="contact-us">
+              <div class="form-group form-inline">
+                <input type="text" class="form" placeholder="Name...." name="name" id="name" value=""
+                  data-msg="Please enter at least 4 characters">
+                <input type="email" class="form" placeholder="Email...." name="email" id="email" value=""
+                  data-msg="Please enter a valid email">
+              </div>
+              <div>
+                <textarea rows="8" id="comment" placeholder="Write your message here...."
+                  data-msg="Please write something for us"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="myMessage()" id="button">Submit</button>
+          </div>
+          </form>
+          <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+            <div class="toast-header">
+              <img src="./Delani/assets/mouse_click.png" class="rounded mr-2" alt="...">
+              <strong class="mr-auto text-primary">Event&middot;Managers</strong>
+              <small>Less than a minute ago</small>
+              <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="toast-body">
+              <p class="text-success"> Hello <span id="outputName"></span> we have received your message. Thank you
+                for reaching out to us.</p>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="icon-bar">
+            <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/login" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.google.com/" class="google" target="_blank"><i class="fa fa-google"></i></a>
+            <a href="https://ke.linkedin.com/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="contact-us.js"></script>
+</body>
+
+</html>
