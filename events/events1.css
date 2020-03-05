@@ -8,8 +8,8 @@
     width: 80%;
     margin-left: 8%;
     margin-top:15px;
-    font-family: 'Bree Serif', serif;  
-    background-color: blue;
+    font-family: 'Bree Serif', serif;
+    background-color: #aa66cc;
     padding:10px;
     border-radius: 20px;
 }
@@ -21,11 +21,9 @@ body{
   background-attachment: fixed;
   padding: 0;
   margin:0;
-    
+
 }
-.bg-primary{
-  background-color: purple;
-}
+
 .glow {
   font-size: 40px;
   color: #fff;
@@ -39,7 +37,7 @@ body{
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
-  
+
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px pink, 0 0 40px pink, 0 0 50px pink, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
