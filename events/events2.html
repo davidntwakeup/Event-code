@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Events Page</title>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="events2.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Events Page</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="events2.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand-sm navbar-light secondary-color">
@@ -27,25 +29,81 @@
           <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">About</a></li>
           <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Events
-        </a>
-        <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">find event</a>
-          <a class="dropdown-item" href="#">buy tickets</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">open events</a>
-          <a class="dropdown-item" href="#">passed events</a>
-        </div>
-      </li>
+            <a class="nav-link dropdown-toggle text-uppercase text-monospace" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-monospace" href="events1.html">Find Event</a>
+              <a class="dropdown-item text-monospace" href="#">Buy Tickets</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-monospace" href="#">Open Events</a>
+              <a class="dropdown-item text-monospace" href="#">Passed Events</a>
+            </div>
+          </li>
           <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
         </ul>
       </div>
     </nav>
   </header>
-  <br>
+  <div class="container-fluid">
+    <div class="col-50">
+      <!-- <p> <marquee>Book Now!</marquee></p> -->
+      <h3>Billing Address</h3>
+      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+      <input type="text" id="email" name="email" placeholder="john@example.com">
+      <label for="adr"><i class="far fa-address-card"></i> Address</label>
+      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+      <label for="city"><i class="fas fa-city"></i> City</label>
+      <input type="text" id="city" name="city" placeholder="Nairobi">
+      <label for="zip">Zip</label>
+      <input type="number" id="zip" name="zip" placeholder="10480">
+      <button id="ticket" class="button"><span>BUY TICKETS</span></button>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="events2.js"></script>
+
+</body>
+
+</html>
+<!-- <header>
+    <nav class="navbar navbar-expand-sm navbar-light secondary-color">
+      <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse  navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">About</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Events
+            </a>
+            <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">find event</a>
+              <a class="dropdown-item" href="#">buy tickets</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">open events</a>
+              <a class="dropdown-item" href="#">passed events</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header> -->
+
+
+<!-- <br>
     <div class="container">
-        <h1> <marquee>Book Now!</marquee></h1>
+        
         <form name="myForm">
           <div class="form-group">
               <label for="name">Name:</label>
@@ -54,28 +112,85 @@
               <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-          </div>
-          <div class="form-group">
+          </div> -->
+<!-- <div class="form-group">
             <label for="Ename">Event name:</label>
             <input type="Ename" class="form-control" id="Ename" placeholder="Enter event name" name="Ename" required>
-          </div>
-          <div class="form-group">
+          </div> -->
+<!-- <div class="form-group">
             <label for="Ecode">Event code:</label>
             <input type="Ecode" class="form-control" id="Ecode" placeholder="Enter event code" name="Ecode" required >
-          </div>
+          </div> -->
 
-          <div class="checkbox">
+<!-- <div class="checkbox">
             <label><input type="checkbox" name="confirmation"> Are you sure you want to book this event? </label>
           </div>
-          <button class="button"><span>BUY TICKETS</span></button>
+          
           
         </form>
     </div>
+ -->
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="events.js"></script>
-    
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="even.css">
+  <title>Document</title>
+</head>
+<body>
+  <br>
+  <br>
+<div class="row w-50" style="margin-left:25%;">
+  <div class="col-75">
+    <div class="container  container1 secondary-color">
+      <form onsubmit="return false">
+        <div class="row text-center"> -->
+
+<!-- <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fab fa-cc-visa" style="color:navy;"></i>
+              <i class="fab fa-cc-amex"" style="color:blue;"></i>
+              <i class="fab fa-cc-mastercard" style="color:red;"></i>
+              <i class="fab fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum"><p id="status">Credit card number</p></label>
+            <input type="number" id="ccnum" name="creditcard" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Expiry</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="Month">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="number" id="expyear" name="expyear" placeholder="2030">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="number" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="Continue to checkout"  class="btn btn-primary">
+      </form>
+    </div>
+  </div>
+</div>
+<script src="events.js"></script>
 </body>
-</html>
+</html> -->
