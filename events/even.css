@@ -1,0 +1,299 @@
+
+body{
+  background-image:url("img/bb.jpg") ;
+  background-size: cover;
+}
+.img-hover-zoom {
+    /* [1.1] Set it as per your need */
+    overflow: hidden /* [1.2] Hide the overflowing of child elements */
+  }
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+    /* [1] The container */
+/* Zoom-n-rotate Container */
+.img-hover-zoom--zoom-n-rotate img {
+    transition: transform .5s ease-in-out;
+  }
+  /* The Transformation */
+  .img-hover-zoom--zoom-n-rotate:hover img {
+    transform: scale(2) rotate(360deg);
+  }
+
+  .mg-image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -o-transition: all 1s ease; /* IE 9 */
+    -ms-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+        max-width: 100%;
+}
+.mg-image:hover img {
+    -webkit-transform:scale(2); /* Safari and Chrome */
+    -moz-transform:scale(2); /* Firefox */
+    -ms-transform:scale(2); /* IE 9 */
+    -o-transform:scale(2); /* Opera */
+     transform:scale(2);
+}
+/* just apply some height and width to the wrapper.*/
+.mg-image {
+  /* width:400px;
+  height:400px; */
+  overflow: hidden;
+}
+
+.hover07 img {
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+.hover07:hover img {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
+
+#card-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  margin: 10px;
+}
+.card-img-top {
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Coachella .card-img-top {
+  background-image: url("img/9.jpg")
+}
+#Eminem .card-img-top {
+  background-image: url("img/10.jpg")
+}
+#Avicii .card-img-top {
+  background-image: url("img/11.jpg")
+}
+#Alan-Walker .card-img-top {
+  background-image: url("img/12.jpg")
+}
+#Martin-Garixx .card-img-top {
+  background-image: url("img/13.jpg")
+}
+#Rihanna .card-img-top {
+  background-image: url("img/14.jpg")
+}
+#David-Guetta .card-img-top {
+  background-image: url("img/15.jpg")
+}
+#Napoletana .card-img-top {
+  background-image: url("img/16.jpg")
+}
+#Diavola .card-img-top {
+  background-image: url("img/17.jpg");
+}
+#Frutti-D\'Mare .card-img-top{
+background-image: url("img/18.jpg");
+}
+.price-display,
+.card-title {
+  display: inline-block;
+}
+.price-display {
+  float: right;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+.order-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart {
+  position: fixed;
+
+  top: 7%;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.cart button {
+  background-color: rgb(134, 30, 22);
+  border: rgb(9, 83, 15);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, .4);
+  padding: 60px;
+}
+.modal-content {
+  background-color: purple;
+  /* margin: 2% auto 15% auto; */
+  margin-left: 8.5%;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  animation: animatezoom .6s;
+}
+@keyframes animatezoom {
+  from {
+      transform: scale(0)
+  }
+  to {
+      transform: sclae(1)
+  }
+}
+#summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#summary div {
+  padding: 10px;
+  width: 300px;
+
+}
+#summary p {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+#summary hr {
+  width: 80%;
+}
+.hidden {
+  display: none;
+}
+.checkout-btn {
+
+
+
+  background-color: blue;
+}
+#alert {
+  position: fixed;
+  top: 20%;
+  z-index: 50;
+  left: 0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container1 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=number] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
