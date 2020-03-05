@@ -45,115 +45,54 @@
 
 
 
+
         </ul>
       </div>
 
     </nav>
   </header>
 
-  <div class="five">
-    <div class="text-five">
-      <div class="text-center text-light">
-        <h3 class="card-header text-light">Open Events
-          <div style="float: right; cursor: pointer;">
-        <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
-      </div>
-        </h3>
-      </div>
-
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div id="mdb-lightbox-ui">
-                <div class="mdb-lightbox">
-                  <div class="row">
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/17.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a><span class="text-dark font-weight-bold text-center">  product 1 <br>PRICE: $10
-                             <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="img/17.jpg">Add to Cart</button>
-                      </div>
-                    </figure>
-
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/18.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a><span class="text-dark font-weight-bold text-center">PRICE: $17777
-                        </span><button class="btn bg-light text-dark" onclick="butt()">order</button></p>
-                      </div>
-                    </figure>
-
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/19.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a ><span class="text-dark font-weight-bold text-center">PRICE: $10
-                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
-                      </div>
-                    </figure>
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/20.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE:
-                              $15</span><br><button class="btn bg-light text-dark">order</button></a></p>
-                      </div>
-                    </figure>
-                  </div>
-                  <div class="row">
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/21.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $12
-                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
-                      </div>
-                    </figure>
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/22.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $15
-                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
-                      </div>
-                    </figure>
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/23.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $11
-                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
-                      </div>
-                    </figure>
-                    <figure class="col-md-3" style="width:300px">
-                      <div class="hover07 mg-image">
-                        <img src="img/24.jpg" class="img-fluid " style="height:200px;" alt="pizza">
-                      </div>
-                      <div class="text-center rgba-white-light">
-                        <p><a href="order.html"><span class="text-dark font-weight-bold text-center">PRICE: $15
-                            </span><br><button class="btn bg-light text-dark">order</button></a></p>
-                      </div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div id="card-display">
     </div>
+    <div class="cart">
+        <button type="button" class="btn btn-primary">
+            View Cart <i class="fa fa-shopping-cart"></i> <span class="badge badge-light">0</span>
+        </button>
+    </div>
+</div>
+<div class="text-center w-50">
+  <div id="mymodal" class="modal  text-center">
+      <div class="modal-content animate">
+          <span class="close" title="Close Modal">&times;</span>
+          <div id="summary"></div>
+          <div id="form-total">
+              <div class="total"></div>
+              <a href="payment.html"><button class="btn btn-primary text-white checkout-btn">CheckOut</button></a>
+          </div>
+      </div>
   </div>
- 
+</div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/fontawesome.min.js" integrity="sha256-7zqZLiBDNbfN3W/5aEI1OX/5uvck9V0yhwKOA9Oe49M=" crossorigin="anonymous"></script>
+
+<script>
+let modal = document.querySelector('#mymodal');
+window.onclick = function(e) {
+    if (e.target == modal) {
+        modal.style.display = "none";
+        $('#checkoutForm').trigger('reset');
+    }
+}
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="even.js"></script>
 </body>

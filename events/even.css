@@ -57,3 +57,243 @@ body{
 	-webkit-filter: blur(0);
 	filter: blur(0);
 }
+
+#card-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 300px;
+  margin: 10px;
+}
+.card-img-top {
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Coachella .card-img-top {
+  background-image: url("img/9.jpg")
+}
+#Eminem .card-img-top {
+  background-image: url("img/10.jpg")
+}
+#Avicii .card-img-top {
+  background-image: url("img/11.jpg")
+}
+#Alan-Walker .card-img-top {
+  background-image: url("img/12.jpg")
+}
+#Martin-Garixx .card-img-top {
+  background-image: url("img/13.jpg")
+}
+#Rihanna .card-img-top {
+  background-image: url("img/14.jpg")
+}
+#David-Guetta .card-img-top {
+  background-image: url("img/15.jpg")
+}
+#Napoletana .card-img-top {
+  background-image: url("img/16.jpg")
+}
+#Diavola .card-img-top {
+  background-image: url("img/17.jpg");
+}
+#Frutti-D\'Mare .card-img-top{
+background-image: url("img/18.jpg");
+}
+.price-display,
+.card-title {
+  display: inline-block;
+}
+.price-display {
+  float: right;
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+.order-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart {
+  position: fixed;
+
+  top: 7%;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.cart button {
+  background-color: rgb(134, 30, 22);
+  border: rgb(9, 83, 15);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0);
+  background-color: rgba(0, 0, 0, .4);
+  padding: 60px;
+}
+.modal-content {
+  background-color: purple;
+  /* margin: 2% auto 15% auto; */
+  margin-left: 8.5%;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  animation: animatezoom .6s;
+}
+@keyframes animatezoom {
+  from {
+      transform: scale(0)
+  }
+  to {
+      transform: sclae(1)
+  }
+}
+#summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#summary div {
+  padding: 10px;
+  width: 300px;
+
+}
+#summary p {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+#summary hr {
+  width: 80%;
+}
+.hidden {
+  display: none;
+}
+.checkout-btn {
+
+
+
+  background-color: blue;
+}
+#alert {
+  position: fixed;
+  top: 20%;
+  z-index: 50;
+  left: 0;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container1 {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type=number] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
