@@ -11,34 +11,35 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head> 
-<body class="container-fluid">
+<body>
 
 <header>
-<nav class="navbar navbar-expand-sm navbar-light secondary-color">
-     <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
-     <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse  navbar-collapse" id="nav">
-       <ul class="navbar-nav ml-auto">
-         <li class="nav-item"><a href="index.html" class="nav-link text-uppercase text-monospace">HOME</a></li>
-         <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">ABOUT</a></li>
-         <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         EVENTS
-       </a>
-       <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="#">Find events</a>
-         <a class="dropdown-item" href="#">Buy tickets</a>
-         <div class="dropdown-divider"></div>
-         <a class="dropdown-item" href="#">Open events</a>
-         <a class="dropdown-item" href="#">Passed events</a>
-       </div>
-     </li>
-         <li class="nav-item"><a href="about.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
-       </ul>
-     </div>
-   </nav>
+  <nav class="navbar navbar-expand-sm navbar-light secondary-color">
+    <a href="index.html" class="navbar-brand text-uppercase text-monospace">Eventcon</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse  navbar-collapse" id="nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link text-uppercase text-monospace">Home</a></li>
+        <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-uppercase text-monospace"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Events
+      </a>
+      <div class="dropdown-menu secondary-color" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item text-monospace" href="./events/events1.html">Find Event</a>
+
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item text-monospace" href="./events/passedevents.html">Passed Events</a>
+        <a class="dropdown-item text-monospace" href="./events/openevents.html">Open Events</a>
+        <a class="dropdown-item text-monospace" href="./events/futureevents.html">future events</a>
+      </div>
+    </li>
+        <li class="nav-item"><a href="contact-us/contact-us.html" class="nav-link text-uppercase text-monospace">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
 </header>
 
 <nav>
@@ -56,8 +57,8 @@
 
 <main>
   <div class="button">
-    <a href="#" class="btn btn-medium">ABOUT US</a>
-    <a href="#" class="btn btn-medium">LEARN MORE</a><br>
+    <a href="./contact-us/contact-us.html" class="btn btn-medium">CONTACT US</a>
+    <a href="./events/openevents.html" class="btn btn-medium">LEARN MORE</a><br>
   </div>
 </body>
 </html>
