@@ -23,6 +23,6 @@ There are no known bugs. In case you do encounter any, please1 contact me.
 ### Support and contact details
 If you experience issues that are related to our site and are hindering you from accessing this material, please contact us.
 ### Live-Link
-(Live-link)[https://davidntwakeup.github.io/Event-code/]
+[Live-link](https://davidntwakeup.github.io/Event-code/)
 ### Contact
 +  Email: zahid.awadh@gmail.com
