@@ -4,7 +4,7 @@
 ## Description
 Event management and ticketing website. The site allows users to browse and find local events.
 >Below is a link to the site:
-https://davidntwakeup.github.io/Event-code/
+[LIVE-LINK](https://davidntwakeup.github.io/Event-code/)
 ## Technologies Used
 The site was created using:
  1. HTML
